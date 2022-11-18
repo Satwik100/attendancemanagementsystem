@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(54,54,54);</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>691</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 255, 255)</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>MON</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>TUE</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>WED</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>THUR</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>FRI</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>1st period</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>2nd period</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>3rd period</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>4th period</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>5th period</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>6th period</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>11B</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>12C</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>BREAK</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>12B</string>
+    </property>
+   </item>
+   <item row="0" column="4">
+    <property name="text">
+     <string>12A</string>
+    </property>
+   </item>
+   <item row="0" column="5">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>12A</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>BREAK</string>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="text">
+     <string>12C</string>
+    </property>
+   </item>
+   <item row="1" column="4">
+    <property name="text">
+     <string>11A</string>
+    </property>
+   </item>
+   <item row="1" column="5">
+    <property name="text">
+     <string>11B</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>12C</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>11A</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>BREAK</string>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="text">
+     <string>11B</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>12A</string>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="text">
+     <string>12C</string>
+    </property>
+   </item>
+   <item row="3" column="2">
+    <property name="text">
+     <string>BREAK</string>
+    </property>
+   </item>
+   <item row="3" column="3">
+    <property name="text">
+     <string>11B</string>
+    </property>
+   </item>
+   <item row="3" column="5">
+    <property name="text">
+     <string>11C</string>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string>12B</string>
+    </property>
+   </item>
+   <item row="4" column="1">
+    <property name="text">
+     <string>12A</string>
+    </property>
+   </item>
+   <item row="4" column="2">
+    <property name="text">
+     <string>BERAK</string>
+    </property>
+   </item>
+   <item row="4" column="3">
+    <property name="text">
+     <string>11A</string>
+    </property>
+   </item>
+   <item row="4" column="5">
+    <property name="text">
+     <string>11B</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

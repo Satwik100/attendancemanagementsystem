@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1573</width>
+    <height>906</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(54,54,54);</string>
+  </property>
+  <widget class="QComboBox" name="classsection">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(19, 31, 59);
+color:rgb(170, 255, 255)</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Class</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="selectclass">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(31, 54, 24);
+color:rgb(165, 251, 255)
+
+</string>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>1441</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>1151</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 255, 255)</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>MONDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>TUESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>WEDNESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>THURSDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>FRIDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>10:00A.M.-11:00A.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>11:00A.M.-12:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>12:00P.M.-1:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:00P.M.-1:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:30P.M.-2:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2:30P.M.-3:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>Computer Science</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>Chemistry lab</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>chemistry</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>Biology</string>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="1" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="2" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="2" column="4">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="2" column="5">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>physics lab</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="3" column="4">
+      <property name="text">
+       <string>Computer Science</string>
+      </property>
+     </item>
+     <item row="3" column="5">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>Computer Science lab</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="4" column="4">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="5">
+      <property name="text">
+       <string>bengali</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QTableWidget" name="tableWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>1351</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 255, 255)</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>MONDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>TUESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>WEDNESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>THURSDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>FRIDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>10:00A.M.-11:00A.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>11:00A.M.-12:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>12:00P.M.-1:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:00P.M.-1:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:30P.M.-2:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2:30P.M.-3:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>Physics lab</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string>Physics lab</string>
+      </property>
+     </item>
+     <item row="1" column="5">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="2" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="2" column="4">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="5">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>Chemistry lab</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="3" column="4">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="3" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>Computer science lab</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="4" column="4">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="4" column="5">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="home_page"/>
+   <widget class="QWidget" name="page_3">
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>1151</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 255, 255)</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>MONDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>TUESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>WEDNESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>THURSDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>FRIDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>10:00A.M.-11:00A.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>11:00A.M.-12:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>12:00P.M.-1:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:00P.M.-1:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:30P.M.-2:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2:30P.M.-3:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>maths</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>Physics lab</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>Computer Science lab</string>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="1" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>Chemistry lab</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="2" column="4">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="2" column="5">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>Computer Science</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>maths</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="3" column="4">
+      <property name="text">
+       <string>Chemistry lab</string>
+      </property>
+     </item>
+     <item row="3" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="4" column="4">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="4" column="5">
+      <property name="text">
+       <string>maths</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QTableWidget" name="tableWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>1151</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 255, 255)</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>MONDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>TUESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>WEDNESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>THURSDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>FRIDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>10:00A.M.-11:00A.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>11:00A.M.-12:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>12:00P.M.-1:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:00P.M.-1:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:30P.M.-2:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2:30P.M.-3:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>Chemistry lab</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>Physics lab</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="1" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="2" column="3">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="2" column="4">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="2" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>Computer Science lab</string>
+      </property>
+     </item>
+     <item row="3" column="4">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="3" column="5">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>Computer Science</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="4" column="4">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="5">
+      <property name="text">
+       <string>Physics lab</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>1151</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 255, 255)</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>MONDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>TUESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>WEDNESDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>THURSDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>FRIDAY</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>10:00A.M.-11:00A.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>11:00A.M.-12:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>12:00P.M.-1:00P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:00P.M.-1:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1:30P.M.-2:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2:30P.M.-3:30P.M.</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="1" column="4">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="1" column="5">
+      <property name="text">
+       <string>Chemistry lab</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string>Computer Science</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string>Physics lab</string>
+      </property>
+     </item>
+     <item row="2" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="2" column="4">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+     <item row="2" column="5">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="3" column="4">
+      <property name="text">
+       <string>Computer Science lab</string>
+      </property>
+     </item>
+     <item row="3" column="5">
+      <property name="text">
+       <string>Maths</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>Computer Science</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string>Chemistry</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>Break</string>
+      </property>
+     </item>
+     <item row="4" column="4">
+      <property name="text">
+       <string>Physics</string>
+      </property>
+     </item>
+     <item row="4" column="5">
+      <property name="text">
+       <string>Bengali</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

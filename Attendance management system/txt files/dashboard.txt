@@ -1,0 +1,22 @@
+self.adminlogin.clicked.connect(self.loginadmin)
+self.facultylogin.clicked.connect(self.loginteacher)
+
+  def loginadmin(self):
+        
+        from loginadmin import Ui_Dialog
+        
+        
+        Dialog = QtWidgets.QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi(Dialog)
+        X=Dialog.exec()
+   
+        
+    def loginteacher(self):
+        from loginteacher import Ui_Dialog
+        
+        
+        Dialog = QtWidgets.QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi(Dialog)
+        X=Dialog.exec()

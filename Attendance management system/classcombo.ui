@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>93</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(54,54,54);</string>
+  </property>
+  <widget class="QComboBox" name="classsection">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(19, 31, 59);
+color:rgb(170, 255, 255)</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Students</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Class 11A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Class 11B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Class 11C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Class 12A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Class 12B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Class 12C</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="selectclass">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>101</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(31, 54, 24);
+color:rgb(165, 251, 255)
+
+</string>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

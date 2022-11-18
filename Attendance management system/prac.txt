@@ -1,0 +1,95 @@
+from http.client import OK
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import*
+from PyQt5.QtWidgets import QCalendarWidget
+
+import mysql.connector
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="attendance",
+  port=3307
+)
+ 
+ classcursor = mydb.cursor()
+        sql="select *from classsec"
+        classcursor.execute(sql)
+        addclass = classcursor.fetchall()
+        # print(addclass)
+        for row in addclass:
+                self.classsection.addItem(str(row[0]))
+        classcursor.close()
+
+        self.selectclass.clicked.connect(self.studentdetails)
+        self.datewise.clicked.connect(self.attend)
+
+        self.classtable.setColumnWidth(0,60)
+        self.classtable.setColumnWidth(1,200)
+        self.classtable.setColumnWidth(2,200)
+        self.classtable.setColumnWidth(4,300)
+        self.saveattendance_2.clicked.connect(self.gopage)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ def attend(self):
+        self.stackedWidget.setCurrentWidget(self.page_2)
+
+
+        con=mydb.cursor()
+        sql=f'select*from attendance_daywise'
+        con.execute(sql)
+        detail=con.fetchall()
+            
+                # print(detail)
+        rowline=0
+        self.datepush.setRowCount(len(detail))
+
+        for i in detail:
+                        self.datepush.setItem(rowline, 0, QtWidgets.QTableWidgetItem(str(i[0])))
+                        self.datepush.setItem(rowline, 1, QtWidgets.QTableWidgetItem(i[1]))
+                        self.datepush.setItem(rowline, 2, QtWidgets.QTableWidgetItem(i[2]))
+                        self.datepush.setItem(rowline, 3, QtWidgets.QTableWidgetItem(str(i[3])))
+                        self.datepush.setItem(rowline, 4, QtWidgets.QTableWidgetItem(str(i[4])))
+                        self.datepush.setItem(rowline, 5, QtWidgets.QTableWidgetItem(str(i[4])))
+                        rowline=rowline+1
+
+    def studentdetails(self):
+
+        if self.classsection.currentText()=='Select Students':
+                msg=QMessageBox()
+                msg.setText("Please select class")
+                msg.setWindowTitle("show error")
+                msg.setIcon(QMessageBox.Information)
+                msg.setStandardButtons(QMessageBox.Ok)
+                retval=msg.exec_()
+                
+        else:
+                con=mydb.cursor()
+                sql=f'select*from {self.classsection.currentText()}'
+                con.execute(sql)
+                detail=con.fetchall()
+            
+                # print(detail)
+                rowline=0
+                self.classtable.setRowCount(len(detail))
+                # self.classtable.setColumnWidth(0,300)
+
+
+                for i in detail:
+                        self.classtable.setItem(rowline, 0, QtWidgets.QTableWidgetItem(str(i[0])))
+                        self.classtable.setItem(rowline, 1, QtWidgets.QTableWidgetItem(i[1]))
+                        self.classtable.setItem(rowline, 2, QtWidgets.QTableWidgetItem(i[2]))
+                        self.classtable.setItem(rowline, 3, QtWidgets.QTableWidgetItem(str(i[3])))
+                        self.classtable.setItem(rowline, 4, QtWidgets.QTableWidgetItem(str(i[4])))
+                        rowline=rowline+1
+
+                daily=f'select*from attendance_daywise'
+    def gopage(self):
+        self.stackedWidget.setCurrentWidget(self.page)
